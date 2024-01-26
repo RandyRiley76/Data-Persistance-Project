@@ -18,6 +18,7 @@ public class ButtonMainMenu : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        GameManager.Instance.SaveData();
       SceneManager.LoadScene(0);  
     }
     

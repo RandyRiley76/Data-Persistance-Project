@@ -27,7 +27,8 @@ public class MainManager : MonoBehaviour
   
     {
         //WELCOME PLAYER WITH THERE NAME AND HIGH SCORE IF THERE IS ONE
-        welcomePlayerText.text = "Welcome: "+GameManager.userName;
+        Debug.Log(GameManager.userName);
+        welcomePlayerText.text = "Welcome: " + GameManager.userName;
         if (GameManager.highScoreUser != null)
         {
             highScoreText.text = ("Best Score :: " + GameManager.highScoreUser + " :: " + GameManager.highScore);
