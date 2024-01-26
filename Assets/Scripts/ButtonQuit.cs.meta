@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ccd3889f75e86e64881d5db13d1daf88
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rollOverMat: {fileID: 2100000, guid: 43abb9a27e6cb664ea38c8dfe28da572, type: 2}
+  - buttonMat: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
