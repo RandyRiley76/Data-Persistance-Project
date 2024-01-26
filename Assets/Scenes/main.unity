@@ -764,6 +764,7 @@ GameObject:
   - component: {fileID: 473371516}
   - component: {fileID: 473371520}
   - component: {fileID: 473371521}
+  - component: {fileID: 473371522}
   m_Layer: 0
   m_Name: QuitButton
   m_TagString: Untagged
@@ -898,6 +899,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rollOverMat: {fileID: 2100000, guid: 43abb9a27e6cb664ea38c8dfe28da572, type: 2}
   buttonMat: {fileID: 2100000, guid: a0916e0280d51f04b9f20d0dc677fd8c, type: 2}
+--- !u!114 &473371522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473371514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1fc76a1be1e1384186bace0630adf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rollOverMat: {fileID: 2100000, guid: 43abb9a27e6cb664ea38c8dfe28da572, type: 2}
+  buttonMat: {fileID: 2100000, guid: a0916e0280d51f04b9f20d0dc677fd8c, type: 2}
 --- !u!1 &474497238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1031,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.26632586, b: 0.40392157, a: 0}
+  m_BackGroundColor: {r: 0.25685295, g: 0.30354577, b: 0.49056602, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1538,6 +1553,7 @@ GameObject:
   - component: {fileID: 1487482673}
   - component: {fileID: 1487482677}
   - component: {fileID: 1487482678}
+  - component: {fileID: 1487482679}
   m_Layer: 0
   m_Name: MainMenuBut
   m_TagString: Untagged
@@ -1668,6 +1684,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5666513cab3e598438d2c51123f44a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rollOverMat: {fileID: 2100000, guid: 43abb9a27e6cb664ea38c8dfe28da572, type: 2}
+  buttonMat: {fileID: 2100000, guid: a0916e0280d51f04b9f20d0dc677fd8c, type: 2}
+--- !u!114 &1487482679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487482671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1fc76a1be1e1384186bace0630adf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rollOverMat: {fileID: 2100000, guid: 43abb9a27e6cb664ea38c8dfe28da572, type: 2}
@@ -2141,7 +2171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -18}
+  m_AnchoredPosition: {x: 0, y: -36}
   m_SizeDelta: {x: 600, y: 40}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2078529056
@@ -2157,7 +2187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3820755, g: 0.92773855, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
