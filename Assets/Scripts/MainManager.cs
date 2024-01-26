@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour
 {
-    public string userName="default user";
+   
     public Brick BrickPrefab;
     public int LineCount = 6;
     public Rigidbody Ball;
 
+    public Text highScoreText;
+    public Text welcomePlayerText;
     public Text ScoreText;
     public GameObject GameOverText;
     
@@ -19,23 +21,26 @@ public class MainManager : MonoBehaviour
     
     private bool m_GameOver = false;
 
-    public static MainManager Instance;
 
-    private void Awake()
-    {   //FOR DATA PERSISTANCE BETWEEN SCENES
-        //singleton pattern - makes sure there is only one instance
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-
-    }
-        // Start is called before the first frame update
-        void Start()
+    // Start is called before the first frame update
+    private void Start()
+  
     {
+        //WELCOME PLAYER WITH THERE NAME AND HIGH SCORE IF THERE IS ONE
+        welcomePlayerText.text = "Welcome: "+GameManager.userName;
+        if (GameManager.highScoreUser != null)
+        {
+            highScoreText.text = ("Best Score :: " + GameManager.highScoreUser + " :: " + GameManager.highScore);
+        }
+        else
+        {
+            highScoreText.text = "";
+        }
+
+
+
+
+
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
         
@@ -80,6 +85,12 @@ public class MainManager : MonoBehaviour
     {
         m_Points += point;
         ScoreText.text = $"Score : {m_Points}";
+        if (m_Points > GameManager.highScore)
+        {
+            GameManager.highScore = m_Points;
+            GameManager.highScoreUser = GameManager.userName;
+            highScoreText.text = ("Best Score :: " + GameManager.highScoreUser + " :: " + GameManager.highScore);
+        }
     }
 
     public void GameOver()
