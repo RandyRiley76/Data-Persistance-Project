@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static string userName = "default user";
     public static int highScore = 0;
-    public static string highScoreUser;
+    public static string highScoreUser = "No Plays Yet";
     public static GameManager Instance;
     private void Awake()
     {   //FOR DATA PERSISTANCE BETWEEN SCENES

@@ -9,7 +9,9 @@ public class StartMenuManager : MonoBehaviour
     public Button StartButton;
     public Button QuitButton;
     public InputField NameInput;
+    public TextMeshProUGUI HighScoreText;
     public GameManager gameManager;
+
 
     public void LoadGameScene()
     {
@@ -28,7 +30,7 @@ public class StartMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
- 
+        // REGISTER MOUSE CLICKS
         StartButton.onClick.AddListener(LoadGameScene);
          QuitButton.onClick.AddListener(QuitGame);
 
@@ -38,7 +40,8 @@ public class StartMenuManager : MonoBehaviour
         } else {
             NameInput.text = GameManager.userName;    
         }
-       // Debug.Log(GameManager.userName);
+        // SET HIGHSCORE
+        HighScoreText.text = "Best Score :: " + GameManager.highScoreUser +" :: "  + GameManager.highScore;
     }
 
 
